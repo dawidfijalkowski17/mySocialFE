@@ -1,0 +1,132 @@
+$backgroundColor: #270238
+$secondFont: 'Atomic Age', sean-serif
+$secondColor: #18161a
+
+section
+    position: relative
+    width: 100%
+    height: 100vh
+    display: flex
+    justify-content: center
+    align-items: center
+    overflow: hidden
+
+section::before
+    content: ''
+    position: absolute
+    bottom: 0
+    width: 100%
+    height: 100px
+    background: linear-gradient(to top, $backgroundColor, transparent)
+    z-index: 1000
+
+img
+    width: 100%
+    height: 100%
+    object-fit: cover
+    position: absolute
+    top: 0
+    left: 0
+
+.headline
+    color: white
+    font-size: 3.5em
+    letter-spacing: 2px
+    position: absolute
+    transform: translate(130px, 80px)
+    text-shadow: 2px 2px 10px black
+    text-transform: uppercase
+    background: none
+    border: none
+    font-family: $secondFont
+    cursor: pointer
+
+.headline:hover
+    filter: brightness(130%)
+
+button:focus,
+button:active
+    outline: none
+
+.m-front
+    filter: brightness(1.50)
+
+.sec
+    position: relative
+    padding: 100px 0
+    background: $backgroundColor
+    color: white
+
+.modal
+
+    margin-top: 3rem
+
+    .modal-content
+        height: 800px
+        min-height: 400px
+        background-color: $secondColor
+
+.modal-header
+    border: none
+
+    .close-icon
+        color: white
+        font-size: 2rem
+
+.next-section
+    margin-top: 5rem
+    display: flex
+    align-items: center
+    text-align: center
+    font-size: 2rem
+    font-weight: 700
+    white-space: pre-line
+    padding: 0 50px
+
+.next-section::before,
+.next-section::after
+    content: ''
+    flex: 1
+    border-bottom: 1px solid white
+
+.next-section:not(:empty)::before
+    margin-right: .25em
+
+.next-section:not(:empty)::after
+    margin-left: .25em
+
+.messenger
+    margin-top: 12rem
+    width: 100%
+    height: 500px
+    position: relative
+    background-color: $secondColor
+
+.navbar-brand
+    font-size: 2.5rem
+    color: white
+    padding-left: 50px
+    font-family: $secondFont
+    text-transform: none
+
+.navbar-brand:hover
+    color: white
+
+a
+    color: white !important
+    font-size: 1.4rem
+    text-transform: uppercase
+
+.nav-item
+    margin: 0 50px 0 0
+
+.navbar-toggler
+    background: none
+    border: none
+
+i
+    color: white
+    font-size: 2rem
+
+.navbar
+    transition: top 0.8s ease-in-out

@@ -1,0 +1,60 @@
+<nav class="navbar navbar-expand-lg fixed-top navbar-light bg-faded" ngxHideOnScroll [propertyUsedToHide]="'top'"
+    [valueWhenHidden]="'-500px'" [valueWhenShown]="'0px'">
+    <a class=" navbar-brand" href="#">mySocial</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <div class="collapse navbar-collapse ml-5 pl-2" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="['']">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">The Creator</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<section>
+    <img src="../assets/stars.png" class="stars" id="stars">
+    <img src="../assets/mountainsahead.png" class="m-back" id="m-back">
+    <button type="button" class="headline" id="text" data-toggle="modal" data-target="#exampleModalLong"
+        [routerLink]="[ '/account' ]">
+        Join to us
+    </button>
+    <img src="../assets/mountains.png" class="m-front" id="m-front">
+    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span class="close-icon" [routerLink]="[ '' ]" aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <router-outlet></router-outlet>
+
+            </div>
+        </div>
+    </div>
+</section>
+<div class="sec">
+
+    <div class="next-section text-uppercase">
+        <span class="psb" id="our_psb">our possibilities</span>
+    </div>
+
+    <div class="messenger">
+
+    </div>
+
+</div>
