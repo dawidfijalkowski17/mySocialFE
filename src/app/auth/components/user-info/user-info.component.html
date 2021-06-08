@@ -1,0 +1,30 @@
+<div class="userInfoSection">
+    <img src="../../../../assets/userInfo.gif" alt="">
+</div>
+
+<div class="createAccount" *ngIf="!accountCreatedSucessfully">
+    <form [formGroup]="userInfo">
+        <div class="input-group mb-3 justify-content-center">
+
+            <input type="text" class="form-c mb-4" placeholder="Name" aria-label="Name" aria-describedby="basic-addon1"
+                formControlName="name">
+            <input type="text" class="form-c mb-4" placeholder="Surname" aria-label="Surname"
+                aria-describedby="basic-addon1" formControlName="surname">
+            <input type="date" class="form-c" placeholder="Birth Date" aria-label="BirthDate"
+                aria-describedby="basic-addon1" formControlName="birthDate">
+
+            <div class="button-group">
+                <button class="next-page-button"><i class="fas fa-arrow-right" (click)="createAccount()"
+                        data-toggle="modal"></i></button>
+            </div>
+
+        </div>
+    </form>
+</div>
+<div class="createAccount text-center" *ngIf="accountCreatedSucessfully" data-target="#exampleModalLong">
+    <h2>Created Account Successfuly!</h2>
+    <i class="far fa-check-circle"></i>
+    <button class="goHome" data-toggle="modal" data-target="#exampleModalLong" aria-hidden="true"
+        (click)="goToHome()">Get In
+    </button>
+</div>

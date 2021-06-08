@@ -3,3 +3,21 @@
     <i class="fab fa-google"></i>
     <i class="fab fa-linkedin-in"></i>
 </div>
+
+<form [formGroup]="credentials">
+    <div class="input-group mb-3 justify-content-center">
+
+        <input type="text" class="form-c mb-4" placeholder="Username" aria-label="Username"
+            aria-describedby="basic-addon1" formControlName="username">
+        <input type="email" class="form-c mb-4" placeholder="E-mail" aria-label="E-mail" aria-describedby="basic-addon1"
+            formControlName="email">
+        <input type="password" class="form-c" placeholder="Password" aria-label="Password"
+            aria-describedby="basic-addon1" formControlName="password">
+
+        <p>Allready have account? <span class="log-in" [routerLink]="['/login']"> Login</span></p>
+        <div class="button-group">
+            <button class="next-page-button"><i class="fas fa-arrow-right" [routerLink]="['/userInfo']"></i></button>
+        </div>
+
+    </div>
+</form>

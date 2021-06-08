@@ -106,7 +106,7 @@ button:active
     margin-left: .25em
 
 .messenger
-    margin-top: 12rem
+    margin-top: 8rem
     width: 100%
     padding: 3rem 0
     position: relative
@@ -161,10 +161,13 @@ button:active
             text-decoration: none
             border-radius: 50%
             display: inline-block
-            transition: filter .5s
+            transition: filter .5s, transform .3s
 
         .fa:hover
             filter: brightness(120%)
+
+        .fas:hover, .far:hover
+            transform: scale(1.1)
 
         .fa-sms
             background: $backgroundColor
@@ -223,3 +226,12 @@ i
 
 .navbar
     transition: top 0.8s ease-in-out
+
+    .createAccount-button
+        background: none
+        outline: none
+        border: none
+        color: white
+        font-size: 1.4rem
+        text-transform: uppercase
+        padding-left: 0

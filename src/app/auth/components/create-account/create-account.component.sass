@@ -1,3 +1,8 @@
+$backgroundColor: #270238
+$firstFont: 'Staatliches', sean-serif
+$secondFont: 'Atomic Age', sean-serif
+$secondColor: #18161a
+
 .model-social
     width: 100%
     height: 100px
@@ -14,7 +19,11 @@
     text-decoration: none
     border-radius: 50%
     display: inline-block
-    transition: filter .5s
+    transition: filter .5s, transform .5s
+    cursor: pointer
+
+.fab:hover
+    transform: scale(1.1)
 
 .fa:hover
     filter: brightness(120%)
@@ -35,3 +44,61 @@
 
 .last
     margin-right: 0
+
+.input-group
+    width: 100%
+    margin-top: 4rem
+
+    .form-c
+        padding: .8rem
+        width: 70%
+        border-radius: 30px
+        outline: none
+        border: none
+
+    p
+        margin-top: 3rem
+        color: white
+        text-transform: uppercase
+        font-size: 1rem
+
+    span
+        font-family: $firstFont
+        font-size: 1.1rem
+        letter-spacing: 1px
+        cursor: pointer
+    span:hover
+        color: green
+
+    .button-group
+        margin-top: 5rem
+        width: 100%
+        display: flex
+        justify-content: center
+
+        .next-page-button:focus
+            outline: none
+            border: none
+
+        .next-page-button
+            background: none
+            border: none
+
+            .fa-arrow-right
+                color: white
+                font-size: 2.4rem
+.modal
+
+    margin-top: 3rem
+
+    .modal-content
+        height: 800px
+        min-height: 400px
+        background-color: $secondColor
+
+.modal-header
+    border: none
+
+    .close-icon
+        color: white
+        font-size: 2rem

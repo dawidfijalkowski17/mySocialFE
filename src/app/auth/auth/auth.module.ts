@@ -6,6 +6,7 @@ import { AuthComponent } from './auth.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { CreateAccountComponent } from '../components/create-account/create-account.component';
 import { NgxHideOnScrollModule } from 'ngx-hide-on-scroll';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { NgxHideOnScrollModule } from 'ngx-hide-on-scroll';
   imports: [
     CommonModule,
     AuthRoutingModule,
-    NgxHideOnScrollModule
+    NgxHideOnScrollModule,
+    ReactiveFormsModule
   ],
   providers: []
 })

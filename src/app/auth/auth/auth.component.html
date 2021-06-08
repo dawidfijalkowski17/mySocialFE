@@ -18,16 +18,18 @@
                 <a class="nav-link" href="#">Contact</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">The Creator</a>
+                <a class="nav-link" [routerLink]="['createAccount']" data-toggle="modal"
+                    data-target="#exampleModalLong">Create Account</a>
+
             </li>
         </ul>
     </div>
 </nav>
 <section>
-    <img src="../assets/stars.png" class="stars" id="stars">
+    <img src=" ../assets/stars.png" class="stars" id="stars">
     <img src="../assets/mountainsahead.png" class="m-back" id="m-back">
     <button type="button" class="headline" id="text" data-toggle="modal" data-target="#exampleModalLong"
-        [routerLink]="[ '/account' ]">
+        [routerLink]="[ 'createAccount' ]">
         Join to us
     </button>
     <img src="../assets/mountains.png" class="m-front" id="m-front">
@@ -54,7 +56,8 @@
                 <div class="col-sm d-flex flex-column align-items-center justify-content-center">
                     <div class="info">
                         <p>Messenger</p>
-                        Hang out anytime, anywhere— <span class="span-msg">Messenger</span> makes it easy and fun to
+                        Hang out anytime, anywhere— <span class="span-msg">Messenger</span> makes it
+                        easy and fun to
                         stay
                         close to your
                         favorite people.
